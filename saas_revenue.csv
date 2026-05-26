@@ -1,0 +1,251 @@
+customer_id,signup_date,plan,mrr,arr,country,acquisition_source,seats,status
+3001,2024-04-16,Starter,29,348,Brazil,Organic,2,Active
+3002,2024-10-15,Starter,29,348,Brazil,Direct,4,Active
+3003,2024-03-12,Free,0,0,Australia,Organic,4,Active
+3004,2024-04-28,Free,0,0,Australia,Direct,5,Churned
+3005,2024-07-22,Pro,79,948,USA,Referral,4,Active
+3006,2024-04-26,Pro,79,948,Brazil,Social,5,Active
+3007,2024-12-04,Enterprise,299,3588,India,Direct,16,Active
+3008,2024-12-31,Free,0,0,India,Referral,4,Active
+3009,2024-12-30,Starter,29,348,Brazil,Referral,1,Active
+3010,2024-02-16,Free,0,0,Canada,Social,3,Active
+3011,2024-02-22,Starter,29,348,India,Paid Ads,4,Active
+3012,2024-10-12,Enterprise,299,3588,India,Organic,23,Active
+3013,2024-10-10,Free,0,0,Australia,Social,3,Active
+3014,2024-07-30,Enterprise,299,3588,India,Direct,37,Active
+3015,2024-09-23,Starter,29,348,Brazil,Paid Ads,3,Active
+3016,2024-06-03,Pro,79,948,France,Paid Ads,2,Active
+3017,2024-08-10,Pro,79,948,Brazil,Referral,1,Active
+3018,2024-07-03,Pro,79,948,Germany,Social,5,Churned
+3019,2024-04-10,Enterprise,299,3588,India,Paid Ads,1,Active
+3020,2024-07-21,Pro,79,948,Brazil,Referral,3,Active
+3021,2024-08-08,Starter,29,348,Canada,Referral,2,Churned
+3022,2024-09-02,Pro,79,948,UK,Social,3,Active
+3023,2024-12-21,Enterprise,299,3588,Germany,Referral,18,Active
+3024,2024-07-20,Pro,79,948,India,Direct,5,Active
+3025,2024-10-06,Starter,29,348,USA,Social,2,Trial
+3026,2024-08-12,Pro,79,948,India,Social,4,Trial
+3027,2024-03-12,Pro,79,948,Germany,Referral,2,Trial
+3028,2024-08-04,Enterprise,299,3588,India,Social,31,Churned
+3029,2024-10-25,Enterprise,299,3588,Brazil,Direct,24,Active
+3030,2024-12-25,Free,0,0,India,Paid Ads,3,Trial
+3031,2024-03-26,Free,0,0,Brazil,Referral,1,Active
+3032,2024-01-06,Free,0,0,Canada,Paid Ads,5,Churned
+3033,2024-10-12,Starter,29,348,France,Referral,4,Active
+3034,2024-12-13,Starter,29,348,Australia,Organic,1,Active
+3035,2024-05-31,Enterprise,299,3588,India,Organic,10,Trial
+3036,2024-06-27,Pro,79,948,Australia,Social,5,Active
+3037,2024-09-04,Pro,79,948,France,Organic,4,Active
+3038,2024-06-12,Free,0,0,Canada,Organic,1,Trial
+3039,2024-01-12,Pro,79,948,India,Paid Ads,2,Trial
+3040,2024-09-21,Starter,29,348,UK,Referral,4,Churned
+3041,2024-08-24,Starter,29,348,Brazil,Paid Ads,4,Active
+3042,2024-07-21,Free,0,0,Germany,Social,4,Churned
+3043,2024-07-18,Free,0,0,Germany,Paid Ads,1,Active
+3044,2024-10-22,Free,0,0,UK,Referral,2,Active
+3045,2024-08-22,Free,0,0,Canada,Social,3,Churned
+3046,2024-11-01,Enterprise,299,3588,Brazil,Direct,23,Active
+3047,2024-06-29,Enterprise,299,3588,UK,Referral,38,Churned
+3048,2024-02-13,Starter,29,348,Australia,Organic,3,Active
+3049,2024-02-29,Starter,29,348,Australia,Paid Ads,4,Churned
+3050,2024-08-02,Starter,29,348,Brazil,Social,4,Active
+3051,2024-11-21,Starter,29,348,UK,Social,2,Active
+3052,2024-04-05,Pro,79,948,France,Direct,3,Active
+3053,2024-01-05,Enterprise,299,3588,UK,Paid Ads,36,Active
+3054,2024-09-15,Enterprise,299,3588,Brazil,Social,46,Active
+3055,2024-08-15,Enterprise,299,3588,UK,Organic,2,Churned
+3056,2024-04-22,Pro,79,948,USA,Referral,5,Active
+3057,2024-05-27,Starter,29,348,France,Direct,4,Trial
+3058,2024-10-08,Free,0,0,India,Referral,3,Churned
+3059,2024-10-04,Free,0,0,France,Direct,4,Active
+3060,2024-02-22,Starter,29,348,Canada,Organic,3,Active
+3061,2024-06-27,Free,0,0,France,Organic,2,Active
+3062,2024-10-28,Pro,79,948,Brazil,Paid Ads,2,Churned
+3063,2024-04-15,Starter,29,348,USA,Direct,5,Active
+3064,2024-05-23,Starter,29,348,Australia,Referral,5,Active
+3065,2024-05-16,Free,0,0,UK,Social,3,Active
+3066,2024-12-01,Starter,29,348,UK,Paid Ads,3,Active
+3067,2024-05-06,Enterprise,299,3588,France,Paid Ads,41,Churned
+3068,2024-05-17,Enterprise,299,3588,Brazil,Social,41,Active
+3069,2024-02-17,Enterprise,299,3588,Canada,Referral,32,Active
+3070,2024-06-16,Free,0,0,India,Social,3,Trial
+3071,2024-02-02,Enterprise,299,3588,Germany,Social,32,Active
+3072,2024-05-17,Pro,79,948,Canada,Referral,5,Churned
+3073,2024-03-07,Enterprise,299,3588,Australia,Organic,7,Active
+3074,2024-11-16,Enterprise,299,3588,USA,Organic,29,Active
+3075,2024-08-21,Free,0,0,Brazil,Paid Ads,2,Trial
+3076,2024-11-28,Pro,79,948,UK,Referral,3,Active
+3077,2024-05-08,Free,0,0,Australia,Paid Ads,4,Active
+3078,2024-11-16,Pro,79,948,Germany,Social,1,Trial
+3079,2024-12-26,Free,0,0,USA,Paid Ads,1,Active
+3080,2024-03-08,Starter,29,348,France,Organic,3,Active
+3081,2024-03-02,Enterprise,299,3588,UK,Social,15,Active
+3082,2024-07-15,Free,0,0,India,Organic,3,Active
+3083,2024-06-02,Starter,29,348,Brazil,Paid Ads,2,Trial
+3084,2024-02-05,Free,0,0,UK,Social,2,Active
+3085,2024-11-17,Starter,29,348,Brazil,Direct,4,Trial
+3086,2024-04-21,Free,0,0,India,Paid Ads,5,Active
+3087,2024-07-15,Pro,79,948,Brazil,Referral,2,Active
+3088,2024-05-21,Free,0,0,Germany,Direct,5,Churned
+3089,2024-11-07,Pro,79,948,USA,Referral,5,Active
+3090,2024-11-06,Starter,29,348,Brazil,Referral,1,Trial
+3091,2024-05-02,Enterprise,299,3588,Brazil,Organic,32,Active
+3092,2024-11-22,Free,0,0,USA,Referral,2,Active
+3093,2024-07-17,Enterprise,299,3588,Australia,Direct,12,Trial
+3094,2024-08-29,Free,0,0,USA,Direct,1,Active
+3095,2024-05-14,Starter,29,348,USA,Organic,5,Active
+3096,2024-05-26,Enterprise,299,3588,Brazil,Social,41,Active
+3097,2024-10-01,Starter,29,348,Canada,Organic,1,Active
+3098,2024-09-18,Starter,29,348,UK,Direct,4,Active
+3099,2024-10-27,Free,0,0,Canada,Social,2,Trial
+3100,2024-01-30,Starter,29,348,India,Social,4,Active
+3101,2024-11-09,Free,0,0,Canada,Paid Ads,1,Active
+3102,2024-12-28,Starter,29,348,USA,Paid Ads,3,Active
+3103,2024-09-24,Pro,79,948,UK,Referral,3,Active
+3104,2024-03-01,Free,0,0,Australia,Social,5,Active
+3105,2024-02-02,Pro,79,948,India,Social,5,Active
+3106,2024-07-03,Free,0,0,France,Direct,3,Active
+3107,2024-03-21,Pro,79,948,India,Direct,1,Trial
+3108,2024-04-26,Free,0,0,USA,Organic,1,Active
+3109,2024-08-29,Pro,79,948,Brazil,Paid Ads,1,Active
+3110,2024-10-10,Enterprise,299,3588,Germany,Referral,27,Active
+3111,2024-06-12,Pro,79,948,India,Direct,1,Active
+3112,2024-09-14,Free,0,0,UK,Paid Ads,1,Churned
+3113,2024-07-24,Free,0,0,France,Referral,3,Active
+3114,2024-02-14,Enterprise,299,3588,USA,Referral,19,Active
+3115,2024-10-15,Pro,79,948,Germany,Social,5,Active
+3116,2024-09-09,Starter,29,348,Germany,Paid Ads,4,Active
+3117,2024-01-13,Starter,29,348,Australia,Organic,1,Active
+3118,2024-12-02,Enterprise,299,3588,Canada,Organic,34,Active
+3119,2024-05-01,Enterprise,299,3588,France,Organic,46,Active
+3120,2024-05-23,Free,0,0,USA,Paid Ads,4,Churned
+3121,2024-12-24,Pro,79,948,France,Organic,1,Churned
+3122,2024-09-15,Starter,29,348,Brazil,Organic,5,Churned
+3123,2024-02-01,Enterprise,299,3588,UK,Paid Ads,17,Active
+3124,2024-06-10,Enterprise,299,3588,Australia,Referral,18,Active
+3125,2024-04-29,Free,0,0,Germany,Paid Ads,1,Churned
+3126,2024-03-20,Free,0,0,UK,Social,3,Active
+3127,2024-07-27,Free,0,0,Australia,Paid Ads,3,Active
+3128,2024-08-25,Pro,79,948,India,Organic,3,Active
+3129,2024-12-26,Free,0,0,Germany,Referral,1,Active
+3130,2024-12-30,Starter,29,348,Australia,Social,1,Churned
+3131,2024-12-12,Pro,79,948,Canada,Paid Ads,4,Active
+3132,2024-08-19,Starter,29,348,India,Social,2,Active
+3133,2024-03-03,Free,0,0,USA,Paid Ads,2,Active
+3134,2024-07-24,Pro,79,948,India,Direct,3,Churned
+3135,2024-02-08,Free,0,0,India,Paid Ads,4,Trial
+3136,2024-03-06,Free,0,0,Australia,Organic,4,Active
+3137,2024-01-26,Starter,29,348,Brazil,Social,1,Active
+3138,2024-07-14,Enterprise,299,3588,UK,Referral,12,Active
+3139,2024-05-20,Pro,79,948,France,Paid Ads,5,Active
+3140,2024-11-13,Starter,29,348,Canada,Social,5,Active
+3141,2024-09-02,Free,0,0,India,Referral,2,Active
+3142,2024-08-02,Starter,29,348,Germany,Direct,4,Active
+3143,2024-12-31,Pro,79,948,France,Direct,3,Active
+3144,2024-10-16,Pro,79,948,Brazil,Referral,1,Active
+3145,2024-06-12,Starter,29,348,USA,Referral,4,Active
+3146,2024-09-28,Pro,79,948,Germany,Paid Ads,2,Active
+3147,2024-12-02,Starter,29,348,Canada,Direct,1,Trial
+3148,2024-04-22,Enterprise,299,3588,Australia,Paid Ads,16,Active
+3149,2024-10-30,Pro,79,948,Australia,Direct,3,Active
+3150,2024-10-17,Starter,29,348,Germany,Social,3,Churned
+3151,2024-03-30,Enterprise,299,3588,USA,Organic,15,Active
+3152,2024-11-04,Starter,29,348,USA,Direct,1,Active
+3153,2024-06-18,Starter,29,348,UK,Referral,2,Trial
+3154,2024-06-14,Free,0,0,USA,Paid Ads,2,Churned
+3155,2024-02-26,Pro,79,948,India,Referral,4,Trial
+3156,2024-10-27,Free,0,0,Australia,Referral,2,Active
+3157,2024-03-21,Enterprise,299,3588,France,Referral,46,Active
+3158,2024-10-14,Pro,79,948,Germany,Direct,4,Active
+3159,2024-06-06,Pro,79,948,UK,Paid Ads,1,Trial
+3160,2024-12-25,Enterprise,299,3588,USA,Paid Ads,21,Churned
+3161,2024-11-09,Starter,29,348,India,Social,3,Active
+3162,2024-02-09,Starter,29,348,Australia,Referral,1,Active
+3163,2024-12-28,Pro,79,948,France,Organic,2,Active
+3164,2024-05-07,Free,0,0,Australia,Referral,1,Active
+3165,2024-01-25,Enterprise,299,3588,France,Social,27,Active
+3166,2024-09-09,Enterprise,299,3588,Australia,Direct,7,Active
+3167,2024-09-02,Starter,29,348,UK,Social,1,Active
+3168,2024-05-30,Free,0,0,Australia,Referral,1,Active
+3169,2024-06-24,Starter,29,348,Brazil,Paid Ads,1,Trial
+3170,2024-10-07,Free,0,0,Australia,Direct,4,Churned
+3171,2024-12-26,Free,0,0,Brazil,Paid Ads,4,Churned
+3172,2024-03-21,Free,0,0,India,Referral,2,Active
+3173,2024-07-28,Pro,79,948,Canada,Referral,1,Active
+3174,2024-01-26,Enterprise,299,3588,France,Paid Ads,24,Active
+3175,2024-01-02,Enterprise,299,3588,India,Referral,41,Trial
+3176,2024-11-03,Enterprise,299,3588,Germany,Organic,14,Active
+3177,2024-03-28,Pro,79,948,India,Social,3,Active
+3178,2024-07-22,Enterprise,299,3588,France,Referral,42,Active
+3179,2024-10-05,Enterprise,299,3588,UK,Referral,24,Active
+3180,2024-04-05,Enterprise,299,3588,USA,Referral,30,Active
+3181,2024-05-14,Starter,29,348,Canada,Direct,2,Active
+3182,2024-12-22,Free,0,0,India,Referral,4,Churned
+3183,2024-10-28,Starter,29,348,USA,Social,4,Churned
+3184,2024-10-01,Enterprise,299,3588,Germany,Social,6,Active
+3185,2024-07-21,Free,0,0,UK,Organic,2,Active
+3186,2024-03-26,Starter,29,348,Germany,Paid Ads,4,Active
+3187,2024-02-10,Enterprise,299,3588,Germany,Paid Ads,17,Churned
+3188,2024-06-12,Free,0,0,India,Social,4,Churned
+3189,2024-10-09,Pro,79,948,Canada,Direct,1,Active
+3190,2024-12-24,Enterprise,299,3588,India,Social,10,Active
+3191,2024-10-17,Free,0,0,India,Direct,3,Active
+3192,2024-10-01,Pro,79,948,Brazil,Referral,4,Active
+3193,2024-10-19,Enterprise,299,3588,USA,Paid Ads,26,Active
+3194,2024-03-14,Enterprise,299,3588,USA,Social,45,Active
+3195,2024-05-01,Free,0,0,France,Referral,1,Active
+3196,2024-06-21,Pro,79,948,Canada,Referral,1,Active
+3197,2024-04-26,Starter,29,348,Canada,Social,3,Active
+3198,2024-08-01,Free,0,0,Germany,Social,4,Active
+3199,2024-09-05,Pro,79,948,USA,Direct,1,Active
+3200,2024-06-08,Enterprise,299,3588,UK,Direct,2,Churned
+3201,2024-03-29,Starter,29,348,Germany,Organic,1,Active
+3202,2024-08-21,Free,0,0,Australia,Paid Ads,3,Active
+3203,2024-08-25,Enterprise,299,3588,India,Organic,24,Active
+3204,2024-09-07,Enterprise,299,3588,UK,Social,36,Churned
+3205,2024-06-28,Pro,79,948,UK,Referral,1,Trial
+3206,2024-05-25,Free,0,0,Brazil,Organic,5,Active
+3207,2024-04-19,Starter,29,348,Germany,Paid Ads,4,Active
+3208,2024-09-19,Free,0,0,USA,Social,2,Active
+3209,2024-11-03,Free,0,0,Germany,Referral,3,Churned
+3210,2024-12-30,Pro,79,948,Brazil,Social,4,Active
+3211,2024-05-09,Starter,29,348,France,Referral,5,Trial
+3212,2024-11-15,Enterprise,299,3588,India,Organic,43,Churned
+3213,2024-07-10,Pro,79,948,Canada,Organic,1,Active
+3214,2024-06-21,Pro,79,948,Australia,Referral,3,Active
+3215,2024-04-06,Starter,29,348,Germany,Organic,4,Churned
+3216,2024-12-04,Pro,79,948,UK,Organic,4,Trial
+3217,2024-05-31,Pro,79,948,Brazil,Social,1,Active
+3218,2024-10-25,Starter,29,348,Australia,Paid Ads,5,Trial
+3219,2024-11-22,Enterprise,299,3588,Australia,Direct,11,Active
+3220,2024-12-02,Starter,29,348,Canada,Organic,2,Active
+3221,2024-05-12,Starter,29,348,Australia,Organic,3,Active
+3222,2024-04-24,Pro,79,948,Brazil,Referral,3,Active
+3223,2024-10-26,Pro,79,948,France,Organic,1,Active
+3224,2024-11-20,Free,0,0,France,Paid Ads,1,Churned
+3225,2024-12-14,Enterprise,299,3588,Canada,Social,10,Active
+3226,2024-03-11,Starter,29,348,Australia,Social,4,Churned
+3227,2024-03-14,Pro,79,948,UK,Organic,3,Active
+3228,2024-11-19,Starter,29,348,Australia,Organic,4,Active
+3229,2024-05-20,Starter,29,348,UK,Direct,4,Active
+3230,2024-02-15,Starter,29,348,Brazil,Social,4,Active
+3231,2024-09-01,Enterprise,299,3588,USA,Organic,13,Churned
+3232,2024-07-10,Free,0,0,Australia,Direct,1,Active
+3233,2024-12-12,Free,0,0,Germany,Paid Ads,3,Trial
+3234,2024-06-08,Starter,29,348,India,Social,5,Churned
+3235,2024-06-05,Starter,29,348,India,Organic,3,Active
+3236,2024-08-21,Pro,79,948,Brazil,Paid Ads,4,Active
+3237,2024-07-02,Starter,29,348,UK,Social,2,Active
+3238,2024-04-24,Starter,29,348,Germany,Organic,5,Churned
+3239,2024-03-27,Free,0,0,Australia,Organic,3,Active
+3240,2024-09-30,Free,0,0,USA,Organic,1,Trial
+3241,2024-01-25,Free,0,0,Brazil,Social,1,Active
+3242,2024-10-07,Pro,79,948,France,Paid Ads,1,Active
+3243,2024-06-03,Enterprise,299,3588,India,Direct,40,Active
+3244,2024-11-06,Starter,29,348,Brazil,Organic,5,Churned
+3245,2024-03-01,Pro,79,948,India,Organic,2,Active
+3246,2024-11-07,Starter,29,348,Canada,Direct,3,Active
+3247,2024-12-26,Enterprise,299,3588,Canada,Paid Ads,36,Active
+3248,2024-09-11,Starter,29,348,France,Referral,1,Active
+3249,2024-01-07,Free,0,0,India,Direct,4,Trial
+3250,2024-03-17,Free,0,0,India,Organic,2,Active
