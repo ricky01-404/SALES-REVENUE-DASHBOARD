@@ -137,21 +137,25 @@ for col in possible_revenue_cols:
         rev_col = col
         break
 
+# Fallback
 if rev_col is None:
     numeric_cols = df.select_dtypes(include='number').columns
     rev_col = numeric_cols[-1]
+
+# ─────────────────────────────────────────────────────────────
+# FIXED CATEGORICAL COLUMN DETECTION
+# ─────────────────────────────────────────────────────────────
+cat_cols = [
+    col for col in df.columns
+    if df[col].dtype == 'object'
+    and 'name' not in col.lower()
+]
 
 # ─────────────────────────────────────────────────────────────
 # SIDEBAR FILTERS
 # ─────────────────────────────────────────────────────────────
 st.sidebar.markdown("---")
 st.sidebar.subheader("🔍 Filters")
-
-cat_cols = [
-    col for col in df.columns
-    if df[col].dtype == 'object'
-    and df[col].nunique() < 20
-]
 
 for col in cat_cols[:3]:
 
@@ -164,6 +168,13 @@ for col in cat_cols[:3]:
 
     if selected != 'All':
         df = df[df[col] == selected]
+
+# ─────────────────────────────────────────────────────────────
+# EMPTY DATAFRAME CHECK
+# ─────────────────────────────────────────────────────────────
+if df.empty:
+    st.warning("No data available for selected filters.")
+    st.stop()
 
 # ─────────────────────────────────────────────────────────────
 # DATE FILTER
@@ -255,6 +266,7 @@ with tab1:
         '#639922'
     ]
 
+    # FIRST ROW
     col1, col2 = st.columns(2)
 
     # Revenue Trend
@@ -275,6 +287,10 @@ with tab1:
                 title='📈 Revenue Trend',
                 markers=True,
                 color_discrete_sequence=['#378ADD']
+            )
+
+            fig.update_layout(
+                template='plotly_dark'
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -299,6 +315,10 @@ with tab1:
                 hole=0.4,
                 title=f'🥧 Revenue by {pie_col}',
                 color_discrete_sequence=COLORS
+            )
+
+            fig.update_layout(
+                template='plotly_dark'
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -328,6 +348,10 @@ with tab1:
                 color_discrete_sequence=['#1D9E75']
             )
 
+            fig.update_layout(
+                template='plotly_dark'
+            )
+
             st.plotly_chart(fig, use_container_width=True)
 
     # Monthly Breakdown
@@ -348,6 +372,10 @@ with tab1:
                 color=cat_cols[0],
                 title='📅 Monthly Breakdown',
                 color_discrete_sequence=COLORS
+            )
+
+            fig.update_layout(
+                template='plotly_dark'
             )
 
             st.plotly_chart(fig, use_container_width=True)
@@ -406,7 +434,6 @@ with tab3:
 
     st.subheader("📄 Dataset")
 
-    # Search Bar
     search = st.text_input("🔍 Search")
 
     if search:
