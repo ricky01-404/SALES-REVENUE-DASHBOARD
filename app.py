@@ -257,6 +257,8 @@ tab1, tab2, tab3 = st.tabs([
 # ─────────────────────────────────────────────────────────────
 with tab1:
 
+  
+
     COLORS = [
         '#378ADD',
         '#1D9E75',
@@ -266,41 +268,52 @@ with tab1:
         '#639922'
     ]
 
-    # FIRST ROW
+    # ─────────────────────────────────────────────
+    # Revenue Trend
+    # ─────────────────────────────────────────────
+    st.subheader("📈 Revenue Trend")
+
+    if 'month_num' in df.columns:
+
+        trend_data = (
+            df.groupby('month_num')[rev_col]
+            .sum()
+            .reset_index()
+        )
+
+        fig1 = px.line(
+            trend_data,
+            x='month_num',
+            y=rev_col,
+            markers=True,
+            color_discrete_sequence=['#378ADD']
+        )
+
+        fig1.update_layout(
+            template='plotly_dark',
+            height=400
+        )
+
+        st.plotly_chart(fig1, use_container_width=True)
+
+    # ─────────────────────────────────────────────
+    # PIE + BAR CHARTS
+    # ─────────────────────────────────────────────
     col1, col2 = st.columns(2)
 
-    # Revenue Trend
+    # PIE CHART
     with col1:
 
-        if 'month_num' in df.columns:
+        st.subheader("🥧 Revenue Distribution")
 
-            trend_data = (
-                df.groupby('month_num')[rev_col]
-                .sum()
-                .reset_index()
-            )
+        pie_col = None
 
-            fig = px.line(
-                trend_data,
-                x='month_num',
-                y=rev_col,
-                title='📈 Revenue Trend',
-                markers=True,
-                color_discrete_sequence=['#378ADD']
-            )
+        for col in cat_cols:
+            if col.lower() not in ['month', 'month_num']:
+                pie_col = col
+                break
 
-            fig.update_layout(
-                template='plotly_dark'
-            )
-
-            st.plotly_chart(fig, use_container_width=True)
-
-    # Pie Chart
-    with col2:
-
-        if cat_cols:
-
-            pie_col = cat_cols[0]
+        if pie_col:
 
             pie_data = (
                 df.groupby(pie_col)[rev_col]
@@ -308,30 +321,37 @@ with tab1:
                 .reset_index()
             )
 
-            fig = px.pie(
+            fig2 = px.pie(
                 pie_data,
                 names=pie_col,
                 values=rev_col,
                 hole=0.4,
-                title=f'🥧 Revenue by {pie_col}',
                 color_discrete_sequence=COLORS
             )
 
-            fig.update_layout(
-                template='plotly_dark'
+            fig2.update_layout(
+                template='plotly_dark',
+                height=400
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig2, use_container_width=True)
 
-    # SECOND ROW
-    col3, col4 = st.columns(2)
+        else:
+            st.warning("No categorical data available for pie chart.")
 
-    # Bar Chart
-    with col3:
+    # BAR CHART
+    with col2:
 
-        if len(cat_cols) > 1:
+        st.subheader("📊 Revenue Comparison")
 
-            bar_col = cat_cols[1]
+        bar_col = None
+
+        for col in cat_cols:
+            if col.lower() not in ['month', 'month_num']:
+                bar_col = col
+                break
+
+        if bar_col:
 
             bar_data = (
                 df.groupby(bar_col)[rev_col]
@@ -340,45 +360,62 @@ with tab1:
                 .sort_values(rev_col, ascending=False)
             )
 
-            fig = px.bar(
+            fig3 = px.bar(
                 bar_data,
                 x=bar_col,
                 y=rev_col,
-                title=f'📊 Revenue by {bar_col}',
                 color_discrete_sequence=['#1D9E75']
             )
 
-            fig.update_layout(
-                template='plotly_dark'
+            fig3.update_layout(
+                template='plotly_dark',
+                height=400
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig3, use_container_width=True)
 
-    # Monthly Breakdown
-    with col4:
+        else:
+            st.warning("No categorical data available for bar chart.")
 
-        if 'month_num' in df.columns and cat_cols:
+    # ─────────────────────────────────────────────
+    # MONTHLY BREAKDOWN
+    # ─────────────────────────────────────────────
+    st.subheader("📅 Monthly Breakdown")
+
+    if 'month_num' in df.columns and len(cat_cols) > 0:
+
+        breakdown_col = None
+
+        for col in cat_cols:
+            if col.lower() not in ['month', 'month_num']:
+                breakdown_col = col
+                break
+
+        if breakdown_col:
 
             breakdown = (
-                df.groupby(['month_num', cat_cols[0]])[rev_col]
+                df.groupby(['month_num', breakdown_col])[rev_col]
                 .sum()
                 .reset_index()
             )
 
-            fig = px.bar(
+            fig4 = px.bar(
                 breakdown,
                 x='month_num',
                 y=rev_col,
-                color=cat_cols[0],
-                title='📅 Monthly Breakdown',
+                color=breakdown_col,
                 color_discrete_sequence=COLORS
             )
 
-            fig.update_layout(
-                template='plotly_dark'
+            fig4.update_layout(
+                template='plotly_dark',
+                height=500
             )
 
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig4, use_container_width=True)
+
+        else:
+            st.warning("No breakdown data available.")
 
 # ─────────────────────────────────────────────────────────────
 # INSIGHTS TAB
