@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
 """, unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────────
-# TITLE SECTION
+# TITLE
 # ─────────────────────────────────────────────────────────────
 st.title("📊 Sales & Revenue Dashboard")
 st.markdown("### Interactive Business Analytics Platform")
@@ -137,7 +137,7 @@ for col in possible_revenue_cols:
         rev_col = col
         break
 
-# Fallback
+# fallback
 if rev_col is None:
     numeric_cols = df.select_dtypes(include='number').columns
     rev_col = numeric_cols[-1]
@@ -145,11 +145,20 @@ if rev_col is None:
 # ─────────────────────────────────────────────────────────────
 # FIXED CATEGORICAL COLUMN DETECTION
 # ─────────────────────────────────────────────────────────────
-cat_cols = [
-    col for col in df.columns
-    if df[col].dtype == 'object'
-    and 'name' not in col.lower()
-]
+cat_cols = []
+
+for col in df.columns:
+
+    # Skip month columns
+    if col.lower() in ['month', 'month_num']:
+        continue
+
+    # Count unique values
+    unique_count = df[col].nunique()
+
+    # Detect categorical columns
+    if unique_count < 30 and col != rev_col:
+        cat_cols.append(col)
 
 # ─────────────────────────────────────────────────────────────
 # SIDEBAR FILTERS
@@ -257,8 +266,6 @@ tab1, tab2, tab3 = st.tabs([
 # ─────────────────────────────────────────────────────────────
 with tab1:
 
-  
-
     COLORS = [
         '#378ADD',
         '#1D9E75',
@@ -268,9 +275,7 @@ with tab1:
         '#639922'
     ]
 
-    # ─────────────────────────────────────────────
     # Revenue Trend
-    # ─────────────────────────────────────────────
     st.subheader("📈 Revenue Trend")
 
     if 'month_num' in df.columns:
